@@ -46,7 +46,7 @@
 }
 
 .container1 {
-  height : 100vh;
+  height : 120vh;
   background-image : url("Sunset.png");
 }
 
@@ -108,3 +108,8 @@
 .signinalignment{
   margin-top : 8rem;
 }
+
+.controllers {
+  margin-top : 10rem;
+}
+

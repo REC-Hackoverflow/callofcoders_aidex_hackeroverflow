@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import Logo from '../logo1.png';
 import Typed from 'react-typed';
 
 const Landingpage = () => {
@@ -8,7 +9,7 @@ const Landingpage = () => {
             <nav className="navbar navbar-expand-lg navbar-dark shadow-5-strong">
                 <div className="container">
                     <a className="navbar-brand" href="#">
-                        <img src="..." width="150" height="70" className="d-inline-block align-top" alt="" />
+                        <img src={Logo} width="150" height="100" className="d-inline-block align-top" alt="" />
                     </a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
@@ -65,7 +66,7 @@ const Landingpage = () => {
                                         <button type="submit" class="btn btn-primary">Submit</button>
                                         <br />
                                         <br />
-                                        <Link className = "signinlink" to = "/signin"> Dont have an account? Sign In Here! </Link>
+                                        <Link className = "signinlink" to = "/landingpage"> Dont have an account? Sign In Here! </Link>
 
                                     </form>
                                 </div>

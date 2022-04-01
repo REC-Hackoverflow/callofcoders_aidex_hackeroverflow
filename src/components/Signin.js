@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Logo from '../logo1.png';
+
 
 const Signin = () => {
     return (
@@ -7,7 +9,7 @@ const Signin = () => {
             <nav className="navbar navbar-expand-lg navbar-dark shadow-5-strong">
                 <div className="container">
                     <a className="navbar-brand" href="#">
-                        <img src="..." width="150" height="70" className="d-inline-block align-top" alt="" />
+                        <img src={Logo} width="150" height="100" className="d-inline-block align-top" alt="" />
                     </a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>

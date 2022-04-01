@@ -1,10 +1,20 @@
 import React from 'react';
-import {Link} from "react-router-dom";
 import Logo from '../logo1.png';
+import { Link } from 'react-router-dom';
 
-const Aboutus = () => {
-    return (
-        <div className="container2" id="about">
+const Landingpage2 = () => {
+
+    const changeHiring = () => {
+        window.location = "/hiring"
+    } 
+
+    const changeFreelancers = () => {
+        window.location = "/firstpage"
+    }
+
+  return (
+    <div className='container1'>
+        <div className='container'>
             <nav className="navbar navbar-expand-lg navbar-dark shadow-5-strong">
                 <div className="container">
                     <a className="navbar-brand" href="#">
@@ -16,30 +26,27 @@ const Aboutus = () => {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav ml-auto"  >
                             <li className="nav-item active">
-                                <Link className="nav-link" to = "/"  style={{color: "white" }} > Home </Link>
+                                <Link className="nav-link" to="/" style={{ color: "white" }} > Home </Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to = "/about"  style={{color: "white"}} > About Us </Link>
+                                <Link className="nav-link" to="/about" style={{ color: "white" }} > About Us </Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to = "/"  style={{color: "white"}} > Contact Us </Link>
+                                <Link className="nav-link" to="/contact" style={{ color: "white" }} > Contact Us </Link>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
-            <div className='container'>
-                <div className="landing-wrapper">
-                    <h1 className="header-landing">
-                        About Us!
-                    </h1>
-                    <p className="content-landing">
-                        HelpersBee, is a community developed to take care of elders who are bed-ridden, patients and babies at ease of their comfort at home and where working professionals can leave their inmates in the care of the care-taker. Our moto is we care for others. We provide a platform for those whose seek others to take pf their family and those who are willing to take care of them. It is cent percent legit and trustworthy
-                    </p>
-                </div>
+            <div className='controllers'>
+                <button type = "submit" onClick={changeHiring} className='btn btn-primary btn-block'> Hire Care-takers </button>
+                <br />
+                <br />
+                <button type = "submit" onClick = {changeFreelancers} className='btn btn-primary btn-block'> FreeLancers </button>
             </div>
         </div>
-    )
+    </div>
+  )
 }
 
-export default Aboutus
+export default Landingpage2
